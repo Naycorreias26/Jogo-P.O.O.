@@ -1,0 +1,22 @@
+package InterfaceGrafica;
+
+import javax.swing.JFrame;
+
+public class Jogo {
+	
+	//construtor
+	public Jogo () {
+		JFrame jf = new JFrame();
+		jf.setTitle("AbcPlay");
+		jf.setSize(1920, 1080);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jf.setLocationRelativeTo(null);
+		jf.setVisible(true);
+		
+	}
+	
+	//método main 
+	public static void main(String [] args) {
+		new Jogo();
+		}
+	}
