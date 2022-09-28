@@ -1,0 +1,30 @@
+package Teste1;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class BotaoPersonalizado extends JFrame {
+		
+	ImageIcon botaop = new ImageIcon(getClass().getResource("group.png"));
+	JButton botao = new JButton(botaop);
+	
+	public BotaoPersonalizado() {
+		
+		setTitle("Botão");
+		setLayout(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(1920, 1080);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        botao.setBounds(825, 900, 280, 80);
+        botao.setBorderPainted(false);
+        botao.setFocusable(false);
+        botao.setContentAreaFilled(false);
+        add(botao);
+	}
+	
+	public static void main (String [] args) {
+		new BotaoPersonalizado();
+	}
+}
